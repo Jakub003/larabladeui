@@ -22,4 +22,4 @@ We love contributions from everyone. Whether you're a seasoned developer or a no
 
 ## License
 
-LaraBlade is an open-source project licensed under [MIT license](LICENSE).
+LaraBlade is an open-source project licensed under [MIT license](https://opensource.org/license/mit/).
