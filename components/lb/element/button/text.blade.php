@@ -6,11 +6,11 @@
 
 @php
     $sizes = [
-        'xs' => 'px-2.5 py-1.5 text-xs',
-        'sm' => 'px-3 py-2 text-sm leading-4',
-        'md' => 'px-4 py-2 text-sm',
-        'lg' => 'px-4 py-3 text-base',
-        'xl' => 'px-6 py-3 text-lg',
+        'xs' => 'px-2.5 h-6 text-xs',
+        'sm' => 'px-3 h-8  text-sm leading-4',
+        'md' => 'px-4 h-10  text-sm',
+        'lg' => 'px-4 h-12 text-base',
+        'xl' => 'px-6 h-16 text-lg',
     ];
     
     $disabledClasses = $disabled ? ' cursor-not-allowed text-neutral-300' : 'text-netural-800  hover:text-primary-500';

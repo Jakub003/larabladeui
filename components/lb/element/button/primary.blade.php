@@ -6,18 +6,18 @@
 
 @php
     $sizes = [
-        'xs' => 'px-2.5 py-1.5 text-xs',
-        'sm' => 'px-3 py-2 text-sm leading-4',
-        'md' => 'px-4 py-2 text-sm',
-        'lg' => 'px-4 py-3 text-base',
-        'xl' => 'px-6 py-3 text-lg',
+        'xs' => 'button-size-xs',
+        'sm' => 'button-size-sm',
+        'md' => 'button-size-md',
+        'lg' => 'button-size-lg',
+        'xl' => 'button-size-xl',
     ];
     
-    $disabledClasses = $disabled ? ' cursor-not-allowed bg-primary-300' : ' bg-primary-500 hover:bg-primary-400';
+    $disabledClasses = $disabled ? 'button-primary-isDisabled' : ' button-primary-notDisabled';
     
-    $default = 'flex flex-none flex-col justify-center items-center text-center font-semibold  text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 transition ease-in-out duration-150 ';
+    $baseClass = 'button-primary-base ';
     
-    $classes = $default . ' ' . $sizes[$size] . ' ' . $disabledClasses . ' ' . 'rounded-' . $rounded;
+    $classes = $baseClass . ' ' . $sizes[$size] . ' ' . $disabledClasses . ' ' . 'rounded-' . $rounded;
 @endphp
 
 <button {{ $attributes->merge(['type' => 'button', 'class' => $classes, 'disabled' => $disabled]) }}>

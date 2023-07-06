@@ -1,0 +1,35 @@
+@layer components {
+    /* Sizes */
+    .button-size-xs {
+        @apply px-2 h-6 text-xs;
+    }
+
+    .button-size-sm {
+        @apply px-3 h-8 text-sm leading-4;
+    }
+
+    .button-size-md {
+        @apply px-4 h-10 text-sm;
+    }
+
+    .button-size-lg {
+        @apply px-4 h-12 text-base;
+    }
+
+    .button-size-xl {
+        @apply px-6 h-16 text-lg;
+    }
+
+    /* Primary */
+    .button-primary-base {
+        @apply flex flex-none flex-col justify-center items-center text-center font-semibold text-white shadow-sm focus:outline-none transition ease-in-out duration-150;
+    }
+
+    .button-primary-isDisabled {
+        @apply cursor-not-allowed bg-primary-300;
+    }
+
+    .button-primary-notDisabled {
+        @apply bg-primary-500 hover:bg-primary-400;
+    }
+}

@@ -55,7 +55,7 @@
 
 <template x-teleport="body">
     <div x-show="{{ $data }}" @keydown.window.escape="$dispatch('close-slideover-panel')" class="relative z-[99]"
-        style="display:none">
+        x-trap.noscroll.inert="{{ $data }}" style="display:none">
         <div x-show="{{ $data }}" x-transition.opacity.duration.600ms @click="$dispatch('close-slideover-panel')"
             class="fixed inset-0 bg-black bg-opacity-10"></div>
         <div class="fixed inset-0">

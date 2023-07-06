@@ -1,0 +1,44 @@
+@layer components {
+    /* Active Scrollbar */
+    .scrollbar-active::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    .scrollbar-active::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .scrollbar-active::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 3px;
+    }
+
+    .scrollbar-active:hover::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 3px;
+    }
+
+    .scrollbar-active:hover::-webkit-scrollbar-thumb {
+        background: #818cf8;
+        border-radius: 3px;
+    }
+
+    .scrollbar-design::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+
+    }
+
+    /* Scrollbar Overall Design */
+    .scrollbar-design::-webkit-scrollbar-track {
+        background: #e5e7eb;
+        border-radius: 5px;
+    }
+
+    .scrollbar-design::-webkit-scrollbar-thumb {
+        background: #818cf8;
+        border-radius: 5px;
+    }
+
+}

@@ -15,7 +15,7 @@
 @endphp
 
 <span
-    class="inline-flex space-x-1 items-center rounded-md px-2 h-6 text-xs font-medium ring-1 ring-inset first:ml-0 ml-1 mr-1 my-1 {{ $colors[$color] ?? $colors['gray'] }}">
+    class="inline-flex space-x-1 items-center rounded-md px-2 h-6 text-xs font-medium ring-1 ring-inset first:ml-0 ml-1 mr-1 my-1 {{ $colors[$color] ?? $colors['concrete'] }}">
     {{ $slot }}
     <p>{{ $label }}</p>
 </span>
